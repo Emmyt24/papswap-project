@@ -1,0 +1,327 @@
+body {
+	background-color: rgba(0, 0, 0, 0.917);
+	/* position: absolute; */
+	text-wrap: nowrap;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.container {
+	/* width: 90vw; */
+	height: 100vh;
+
+}
+
+/* 255F31D6 */
+.nav {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	list-style-type: none;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 70px;
+	z-index: 999;
+	position: fixed;
+}
+
+.nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	/* padding-left: 10px; */
+	padding-right: 30px;
+	/* margin-left:2rem; */
+	padding-bottom: 20px;
+}
+
+.nav img {
+	height: 60px;
+	width: 90px;
+	/* padding-top: 20px; */
+	padding-left: 0;
+	margin-left: 0;
+
+}
+
+/* .nav ul {
+	margin-right: %;
+	display: flex;
+} */
+
+.nav ul li a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.515);
+	font-weight: 200;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	transition: 0.5 ease;
+
+
+}
+
+.nav ul li a:hover {
+	color: white;
+	/* background-color: rgba(0, 0, 0, 0.814); */
+	/* background-size: 60px 80px; */
+}
+
+.nav ul button {
+	background: none;
+	border: none;
+	color: #ffffff83;
+	font-weight: bold;
+	font-size: 30px;
+	padding-left: 5px
+}
+
+.nav input {
+	text-align: start;
+	font-size: 15px;
+	font-weight: 300;
+	/* margin-right: 25%; */
+	color: rgba(255, 255, 255, 0.515);
+	height: 40px;
+	width: 25rem;
+	outline: 0;
+	border: 1px solid black;
+	border-color: rgba(255, 255, 255, 0.515);
+	border-radius: 0.9rem;
+	background: transparent;
+	box-sizing: border-box;
+	background-image: url('search.png');
+	background-size: 20px 20px;
+	background-position: 8px 10px;
+	background-repeat: no-repeat;
+	padding-left: 35px;
+
+}
+
+.nav input:hover {
+	border-color: #255F31D6;
+}
+
+.nav .connect {
+	/* margin-right: 5%; */
+	display: flex;
+
+}
+
+.nav .connect .btn-drop {
+	margin-right: 20px;
+	background: none;
+	color: rgba(255, 255, 255, 0.515);
+	font-weight: 300;
+	border: none;
+	font-size: 20px;
+}
+
+.nav .connect .btn-drop:hover {
+	color: white;
+}
+
+.nav .connect .btn-connect {
+	background-color: rgba(35, 133, 35, 0.276);
+	height: 30px;
+	width: 100px;
+	border-radius: 0.8rem;
+	color: #04b627fd;
+	border: none;
+	font-weight: 500;
+	/* font-size: 1px; */
+	margin-right: 50px;
+	font: 18px monospace;
+}
+
+/* rgba(4, 182, 39, 0.992) */
+.main {
+	flex-wrap: nowrap;
+	top: 30%;
+	left: 30%;
+	width: 27%;
+	height: 35%;
+	padding: 50px 60px 70px;
+	border: 0.1px solid rgba(40, 100, 40, 0.359);
+	/* border-width: 1px; */
+	position: absolute;
+	border-radius: 1rem;
+	box-shadow: 20px 20px 50px rgba(35, 89, 35, 0.221);
+}
+
+.main .top-text {
+	display: flex;
+	margin-top: -18px;
+	margin-left: -12%;
+}
+
+.main .top-text button {
+
+	margin-top: -20px;
+	padding-left: 0;
+
+
+}
+
+.main .top-text .set-btn {
+	background: none;
+	border: none;
+	color: rgba(255, 255, 255, 0.515);
+	font-size: 16px;
+	font-weight: 500;
+	margin-left: 80%;
+}
+
+.main .top-text .swap-btn {
+	background: none;
+	border: none;
+	color: rgba(255, 255, 255, 0.515);
+
+	font-weight: 500;
+	color: white;
+	font: 35px monospace;
+	font-size: 18px;
+}
+
+.main .top-text .buy-btn {
+	background: none;
+	border: none;
+	color: rgba(255, 255, 255, 0.515);
+	font-weight: 500;
+	font: 35px monospace;
+	font-size: 18px;
+}
+
+.main .you-pay {
+	background-color: rgba(255, 255, 255, 0.034);
+	height: 50%;
+	width: 408px;
+	margin-left: -50px;
+	margin-top: -7px;
+	border-radius: 0.8rem;
+	/* font: 30px monospace; */
+
+}
+
+.main .you-pay input {
+	text-align: start;
+	margin-top: -18px;
+	height: 40px;
+	width: 60%;
+	border: none;
+	font-size: 35px;
+	font-weight: 500;
+	background: none;
+	outline: 0;
+	color: white;
+	padding-left: 5px;
+
+
+}
+
+.main .you-pay p {
+	color: rgba(255, 255, 255, 0.515);
+	padding: 10px 10px;
+	font: 30px monospace;
+	font-size: 18px
+}
+
+.main .you-pay .sub-pay {
+	display: flex;
+}
+
+.main .you-pay button {
+	margin-left: 11%;
+	margin-top: -1%;
+	background: none;
+	width: 100px;
+	height: 30px;
+	background-color: rgba(22, 22, 22, 0.856);
+	color: white;
+	border: none;
+	border-radius: 1rem;
+	font-weight: 550;
+	font-size: 15px;
+
+}
+
+
+.main .you-pay button:hover {
+	background-color: rgba(49, 48, 48, 0.856);
+}
+
+.main .you-pay i {
+	padding-left: 15px;
+}
+
+.main .you-rec {
+	background-color: rgba(255, 255, 255, 0.034);
+	height: 50%;
+	width: 408px;
+	margin-left: -50px;
+	margin-top: -10px;
+	border-radius: 0.8rem;
+}
+
+.main .you-rec p {
+	color: rgba(255, 255, 255, 0.515);
+	padding: 10px 10px;
+	font: 30px monospace;
+	font-size: 18px
+}
+
+.main .you-rec input {
+	text-align: start;
+	margin-top: -18px;
+	height: 40px;
+	width: 60%;
+	border: none;
+	font-size: 35px;
+	font-weight: 500;
+	background: none;
+	outline: 0;
+	color: white;
+	padding-left: 5px;
+}
+
+.main .you-rec button {
+	/* margin-left: 11%; */
+	margin-top: -5%;
+	background: none;
+	width: 140px;
+	height: 30px;
+	background-color: rgba(35, 133, 35, 0.583);
+	color: white;
+	border: none;
+	border-radius: 1rem;
+	font-weight: 550;
+	font-size: 15px;
+}
+
+.main .you-rec i {
+	padding-left: 10px;
+}
+
+.main .connect-btn {
+	border: none;
+	width: 408px;
+	height: 50px;
+	background-color: rgba(28, 91, 28, 0.555);
+	/* font-size: 15px; */
+	border-radius: 1rem;
+	color: white;
+	margin: 10px -50px;
+	padding-top: -1px;
+	font: 20px monospace;
+	font-weight: 500;
+
+}
+
+.main .connect-btn:hover {
+	background-color: rgba(35, 133, 35, 0.583);
+}
